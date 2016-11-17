@@ -1,0 +1,23 @@
+.about
+{
+	position: relative;
+	background: $pagecolor;
+	padding-top:100px;
+	.icon
+	{
+		position: absolute;
+		left:50%;
+		top:0;
+		@include size(100px);
+		transform:translate(-50%, -50%);
+		background-color: white;
+		border: 6px solid lighten($pagecolor, 15);
+		border-radius: 50%;
+	}
+	p
+	{
+		margin: 0 auto;
+		width: 50%;
+		line-height: 1.2em;
+	}
+}

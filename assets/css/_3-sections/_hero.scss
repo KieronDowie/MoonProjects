@@ -1,0 +1,58 @@
+.hero
+{
+	background-image: url($heroimg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+	height: 700px;
+	width:100%;
+	nav
+	{
+		@include clearfix;
+		ul
+		{
+			list-style:none;
+			float:right;
+			li
+			{
+				float:left;
+				margin: 1em 4em 0 0;
+				@media (max-width: 620px)
+				{
+					float:none;
+					text-align:center;
+				}
+				a
+				{
+					text-decoration: none;
+					color: $navcolor;
+					font-family: 'Signika', 'Helvetica', sans-serif;
+					font-size: 1.5em;
+					&:hover
+					{
+						color: $navhover;
+					}
+				}
+			}
+		}
+	}
+	
+	h1
+	{
+		font-family: 'Maven Pro', 'Helvetica', sans-serif;
+		font-size: 6em;
+		color: $headercolor;
+		text-shadow: 0 0 10px black;
+		text-align:center;
+		margin: 200px 0 0 0;
+	}
+	h5
+	{
+		margin-top:5px;
+		text-align:center;
+		text-shadow: 0 0 10px black;
+		color:$taglinecolor;
+		font-family: 'Signika', 'Helvetica', sans-serif;
+		font-size: 1.4em;
+	}
+}
