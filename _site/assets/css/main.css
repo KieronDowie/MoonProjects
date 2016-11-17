@@ -237,7 +237,9 @@ h1, p, footer {
 .about {
   box-shadow: 0 0px 40px 0px black;
   position: relative;
-  background: #577EC6;
+  background: #FFF;
+  border-top: 6px solid #90aad9;
+  margin-top: -6px;
   padding-top: 85px;
   padding-bottom: 35px; }
   .about .icon {
