@@ -30,11 +30,11 @@ footer
 		}
 		p
 		{
-			float:right;
+			text-align:center;
 			color: $navcolor;
 			font-family: 'Signika', Helvetica, sans-serif;
 			font-size: 0.8em;
-			padding: 0 0.5em 0 0;
+			padding: 0.5em 0 0 0;
 		}
 	}
 	@include clearfix;

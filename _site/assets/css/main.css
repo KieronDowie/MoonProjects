@@ -235,9 +235,11 @@ h1, p, footer {
     font-size: 1.4em; }
 
 .about {
+  box-shadow: 0 0px 40px 0px black;
   position: relative;
-  background: #4B8BDF;
-  padding-top: 100px; }
+  background: #577EC6;
+  padding-top: 85px;
+  padding-bottom: 35px; }
   .about .icon {
     position: absolute;
     left: 50%;
@@ -246,12 +248,14 @@ h1, p, footer {
     width: 100px;
     transform: translate(-50%, -50%);
     background-color: white;
-    border: 6px solid #8cb5eb;
+    border: 6px solid #90aad9;
     border-radius: 50%; }
   .about p {
     margin: 0 auto;
+    padding-bottom: 1.2em;
     width: 50%;
-    line-height: 1.2em; }
+    line-height: 1.2em;
+    font-family: 'Open Sans', Helvetica, sans-serif; }
 
 footer {
   background: #0E001E;
@@ -276,11 +280,11 @@ footer {
       display: table;
       clear: both; }
   footer nav p {
-    float: right;
+    text-align: center;
     color: #E0E0E0;
     font-family: 'Signika', Helvetica, sans-serif;
     font-size: 0.8em;
-    padding: 0 0.5em 0 0; }
+    padding: 0.5em 0 0 0; }
   footer:after {
     content: "";
     display: table;

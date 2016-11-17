@@ -1,8 +1,10 @@
 .about
 {
+	box-shadow: 0 0px 40px 0px black;
 	position: relative;
 	background: $pagecolor;
-	padding-top:100px;
+	padding-top:85px;
+	padding-bottom:35px;
 	.icon
 	{
 		position: absolute;
@@ -17,7 +19,9 @@
 	p
 	{
 		margin: 0 auto;
+		padding-bottom: 1.2em;
 		width: 50%;
 		line-height: 1.2em;
+		font-family: 'Open Sans', Helvetica, sans-serif;
 	}
 }
