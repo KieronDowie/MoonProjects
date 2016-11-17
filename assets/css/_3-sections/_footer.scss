@@ -1,6 +1,41 @@
 footer
 {
 	background: $footercolor;
-	height:60px;
 	width:100%;
+	nav
+	{
+		ul
+		{
+			list-style: none;
+			text-align:center;
+			li
+			{
+				display:inline;
+				padding: 5px 0 5px 0;
+				a
+				{
+					text-align:center;
+					color: $navcolor;
+					text-decoration: none;
+					padding: 0px 10px;
+					font-family: 'Signika', Helvetica, sans-serif;
+					font-size: 0.8em;
+					&:hover
+					{
+						color:$navhover;
+					}
+				}
+			}
+			@include clearfix;
+		}
+		p
+		{
+			float:right;
+			color: $navcolor;
+			font-family: 'Signika', Helvetica, sans-serif;
+			font-size: 0.8em;
+			padding: 0 0.5em 0 0;
+		}
+	}
+	@include clearfix;
 }

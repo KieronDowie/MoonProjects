@@ -187,7 +187,7 @@ li {
   padding: 0;
   margin: 0; }
 
-h1, p {
+h1, p, footer {
   padding: 0;
   margin: 0; }
 
@@ -254,6 +254,34 @@ h1, p {
     line-height: 1.2em; }
 
 footer {
-  background: #110054;
-  height: 60px;
+  background: #0E001E;
   width: 100%; }
+  footer nav ul {
+    list-style: none;
+    text-align: center; }
+    footer nav ul li {
+      display: inline;
+      padding: 5px 0 5px 0; }
+      footer nav ul li a {
+        text-align: center;
+        color: #E0E0E0;
+        text-decoration: none;
+        padding: 0px 10px;
+        font-family: 'Signika', Helvetica, sans-serif;
+        font-size: 0.8em; }
+        footer nav ul li a:hover {
+          color: #FFF; }
+    footer nav ul:after {
+      content: "";
+      display: table;
+      clear: both; }
+  footer nav p {
+    float: right;
+    color: #E0E0E0;
+    font-family: 'Signika', Helvetica, sans-serif;
+    font-size: 0.8em;
+    padding: 0 0.5em 0 0; }
+  footer:after {
+    content: "";
+    display: table;
+    clear: both; }
