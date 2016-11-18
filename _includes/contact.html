@@ -1,0 +1,23 @@
+<section class="contact">
+	<h3>Lorem ipsum dolor sit amet.</h3>
+	<div class="wrapper">
+		<ul>
+			<li>
+				<div class="icon icon-envelop"></div>
+				<span class="spanText" tabindex=1>{{ site.email }}</span>
+			</li>
+			<li>
+				<div class="icon icon-mobile"></div>
+				<span class="spanText" tabindex=1>{{ site.mobile }}</span>
+			</li>
+			<li>
+				<div class="icon icon-phone"></div>
+				<span class="spanText" tabindex=1>{{ site.phone }}</span>
+			</li>
+		</ul>
+		<div>
+			<img src="{{ site.icon }}" alt="" class="person">
+			<a href="mailto:{{site.email}}"><button class="call">Send me an email!</button></a>
+		</div>
+	</div>
+</section>
