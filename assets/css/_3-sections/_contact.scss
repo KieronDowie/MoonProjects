@@ -1,0 +1,96 @@
+.contact
+{
+	background: darken($pageaccent, 15);
+	h3
+	{
+		text-align:center;
+		color:white;
+		font-size: 2em;
+		padding-top: 1em;
+		@include headerfont;
+	}
+	.wrapper
+	{
+		padding-bottom: 50px;
+		position:relative;
+		ul
+		{
+			float:left;
+			margin-left: 20%;
+			margin-right: 10%;
+			list-style-type: none;
+			@media (max-width: 760px)
+			{
+				width: 40%;
+				margin:0;
+				margin-left:40%;
+				margin-bottom: 20px;
+			}
+			li
+			{
+				position:relative;
+				margin-top: 2em;
+				.icon
+				{
+					border-radius: 50%;
+					background: white;
+					position:absolute;
+					left:0;
+					top: 50%;
+					@include transform(translate(-50%,-50%));
+					@include size(3.6em);
+					text-align:center;
+					&:before
+					{
+						font-size: 2em;
+						line-height: 1.8em;
+						color: darken($pageaccent,20);
+					}
+				}
+				span
+				{
+					padding: 0.2em 0.2em 0.1em 1.5em;
+					min-width: 10em;
+					font-size: 1.4em;
+					line-height: 1.4em;
+					z-index: 2;
+					background:white;
+					border: 2px solid #BFBFBF;
+					border-style: inset;
+					&:active
+					{
+						color: black;
+					}
+				}
+			}
+		}
+		&>div
+		{
+			float:left;
+			width: 162px;
+			@media (max-width: 760px)
+			{
+				width: 40%;
+				margin:0;
+				margin-left:40%;
+			}
+			img
+			{
+				border-radius: 50%;
+				@include size(150px);
+				border: 6px solid white;
+			}
+			a
+			{
+				text-decoration: none;
+			}
+			button
+			{
+				@include primarybutton;
+				font-size: 1.2em;
+				padding: 0.2em 0.5em 0.2em 0.5em;
+			}
+		}
+		@include clearfix;
+	}
+}
