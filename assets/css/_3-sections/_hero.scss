@@ -4,8 +4,8 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center center;
-	height: 700px;
 	width:100%;
+	padding-bottom: 300px;
 	nav
 	{
 		@include clearfix;
@@ -26,7 +26,7 @@
 				{
 					text-decoration: none;
 					color: $navcolor;
-					font-family: 'Signika', 'Helvetica', sans-serif;
+					@include linkfont;
 					font-size: 1.5em;
 					&:hover
 					{
@@ -39,7 +39,7 @@
 	
 	h1
 	{
-		font-family: 'Maven Pro', 'Helvetica', sans-serif;
+		@include headerfont;
 		font-size: 6em;
 		color: $headercolor;
 		text-shadow: 0 0 10px black;
@@ -52,7 +52,7 @@
 		text-align:center;
 		text-shadow: 0 0 10px black;
 		color:$taglinecolor;
-		font-family: 'Signika', 'Helvetica', sans-serif;
+		@include headerfont;
 		font-size: 1.4em;
 	}
 }

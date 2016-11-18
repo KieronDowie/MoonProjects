@@ -1,6 +1,5 @@
 .about
 {
-	box-shadow: 0 0px 40px 0px black;
 	position: relative;
 	background: $pagecolor;
 	border-top: 6px solid lighten($pageaccent,15);
@@ -22,8 +21,9 @@
 	{
 		margin: 0 auto;
 		padding-bottom: 1.2em;
-		width: 50%;
+		width: 60%;
 		line-height: 1.2em;
-		font-family: 'Open Sans', Helvetica, sans-serif;
+		@include paragraphfont;
+		font-size: 1.4em;
 	}
 }

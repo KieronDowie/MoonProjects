@@ -18,7 +18,7 @@ footer
 					color: $navcolor;
 					text-decoration: none;
 					padding: 0px 10px;
-					font-family: 'Signika', Helvetica, sans-serif;
+					@include linkfont;
 					font-size: 0.8em;
 					&:hover
 					{
@@ -32,7 +32,7 @@ footer
 		{
 			text-align:center;
 			color: $navcolor;
-			font-family: 'Signika', Helvetica, sans-serif;
+			@include paragraphfont;
 			font-size: 0.8em;
 			padding: 0.5em 0 0 0;
 		}

@@ -1,3 +1,20 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Signika');
 @import url('https://fonts.googleapis.com/css?family=Maven+Pro');
+
+$OpenSans: 'Open Sans', Helvetica, sans-serif;
+$Signika: 'Signika', Helvetica, sans-serif;
+$MavenPro: 'Maven Pro', Helvetica, sans-serif;
+
+
+@mixin headerfont
+{
+	font-family: $Signika;
+}
+@mixin paragraphfont
+{
+	font-family: $OpenSans;
+}@mixin linkfont
+{
+	font-family: $Signika;
+}
