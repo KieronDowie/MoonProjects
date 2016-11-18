@@ -1,0 +1,12 @@
+<section class="references">
+	<ul>
+		{% for ref in site.references %}
+			<li>
+				<div class="quote"> {{ ref.quote }} </div>
+				<div class="person">
+				 	<img src="{{ ref.person }}" alt="">
+				 </div>
+			</li>
+		{% endfor %}
+	</ul>
+</section>
