@@ -191,6 +191,10 @@ h1, p, footer {
   padding: 0;
   margin: 0; }
 
+::selection {
+  background: #6798CF;
+  color: white; }
+
 @font-face {
   font-family: 'icomoon';
   src: url("../fonts/icomoon.eot?c8qcv5");
@@ -225,7 +229,8 @@ h1, p, footer {
   background-repeat: no-repeat;
   background-position: center center;
   width: 100%;
-  padding-bottom: 300px; }
+  padding-bottom: 300px;
+  display: block; }
   .hero nav:after {
     content: "";
     display: table;
@@ -437,26 +442,19 @@ footer {
     padding-top: 1em;
     font-family: "Signika", Helvetica, sans-serif; }
   .contact .wrapper {
-    display: -webkit-box;
-    display: -moz-box;
-    display: box;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    box-pack: center;
-    -webkit-justify-content: center;
-    -moz-justify-content: center;
-    -ms-justify-content: center;
-    -o-justify-content: center;
-    justify-content: center;
-    -ms-flex-pack: center; }
+    padding-bottom: 50px;
+    position: relative; }
     .contact .wrapper ul {
-      padding-right: 400px;
-      padding-bottom: 50px;
+      float: left;
+      margin-left: 20%;
+      margin-right: 10%;
       list-style-type: none; }
+      @media (max-width: 760px) {
+        .contact .wrapper ul {
+          width: 40%;
+          margin: 0;
+          margin-left: 40%;
+          margin-bottom: 20px; } }
       .contact .wrapper ul li {
         position: relative;
         margin-top: 2em; }
@@ -489,16 +487,22 @@ footer {
           border-style: inset; }
           .contact .wrapper ul li span:active {
             color: black; }
-    .contact .wrapper div {
+    .contact .wrapper > div {
+      float: left;
       width: 162px; }
-      .contact .wrapper div img {
+      @media (max-width: 760px) {
+        .contact .wrapper > div {
+          width: 40%;
+          margin: 0;
+          margin-left: 40%; } }
+      .contact .wrapper > div img {
         border-radius: 50%;
         height: 150px;
         width: 150px;
         border: 6px solid white; }
-      .contact .wrapper div a {
+      .contact .wrapper > div a {
         text-decoration: none; }
-      .contact .wrapper div button {
+      .contact .wrapper > div button {
         display: block;
         background: #C40B13;
         color: #FFF;
@@ -508,8 +512,12 @@ footer {
         font-family: "Signika", Helvetica, sans-serif;
         font-size: 1.2em;
         padding: 0.2em 0.5em 0.2em 0.5em; }
-        .contact .wrapper div button:hover {
+        .contact .wrapper > div button:hover {
           background: #dc0c15; }
-        .contact .wrapper div button:active {
+        .contact .wrapper > div button:active {
           background: #ac0a11;
           box-shadow: 0px 0px 0px -5px black; }
+    .contact .wrapper:after {
+      content: "";
+      display: table;
+      clear: both; }

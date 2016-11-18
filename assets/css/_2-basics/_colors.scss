@@ -7,3 +7,10 @@ $pagecolor: #FFF;
 $pageaccent: #577EC6;
 $buttoncolor: #C40B13;
 $footercolor: #0E001E;
+$hilite: #6798CF;
+
+::selection
+{
+	background: $hilite;
+	color: white;
+}
