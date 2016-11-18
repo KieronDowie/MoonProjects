@@ -1,0 +1,47 @@
+.references
+{
+	h2
+	{
+		@include headerfont;
+		font-size: 2.2em;
+		padding-top:1em;
+		text-align:center;
+	}
+	ul
+	{
+		list-style-type: none;
+		li
+		{
+			width: 90%;
+			margin: 40px auto 0 auto;
+			.quote
+			{
+				display: block;
+				text-align: center;
+				background: #E4E4E4;
+				float:left;
+				padding: 60px;
+				padding-right: 100px;
+				margin-top: 10px;
+				font-style: italic;
+				@include paragraphfont;
+				font-size: 1.2em;
+			}
+			.person
+			{	
+				float:right;
+				border-radius: 50%;
+				border: 6px solid $pageaccent;
+				margin: 0;
+				margin-top: -80px;
+				@include size( 100px);
+			}
+			&:nth-child(even) .person
+			{
+				float:left;
+			}
+			@include clearfix;
+		}
+	}
+	
+}

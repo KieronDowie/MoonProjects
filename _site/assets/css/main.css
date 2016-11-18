@@ -191,6 +191,34 @@ h1, p, footer {
   padding: 0;
   margin: 0; }
 
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot?c8qcv5");
+  src: url("../fonts/icomoon.eot?c8qcv5#iefix") format("embedded-opentype"), url("../fonts/icomoon.ttf?c8qcv5") format("truetype"), url("../fonts/icomoon.woff?c8qcv5") format("woff"), url("../fonts/icomoon.svg?c8qcv5#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.icon-phone:before {
+  content: "\e942"; }
+
+.icon-mobile:before {
+  content: "\e943"; }
+
+.icon-envelop:before {
+  content: "\e945"; }
+
 .hero {
   background-image: url("/assets/img/herobg.jpg");
   background-size: cover;
@@ -350,10 +378,10 @@ footer {
         box-shadow: 0px 5px 10px -5px black;
         outline: none;
         border: none;
+        font-family: "Signika", Helvetica, sans-serif;
         padding: 10px 20px;
         margin: 40px auto 20px auto;
-        width: 80%;
-        font-family: "Signika", Helvetica, sans-serif; }
+        width: 80%; }
         .pricing > ul > li button:hover {
           background: #dc0c15; }
         .pricing > ul > li button:active {
@@ -363,3 +391,125 @@ footer {
       content: "";
       display: table;
       clear: both; }
+
+.references h2 {
+  font-family: "Signika", Helvetica, sans-serif;
+  font-size: 2.2em;
+  padding-top: 1em;
+  text-align: center; }
+.references ul {
+  list-style-type: none; }
+  .references ul li {
+    width: 90%;
+    margin: 40px auto 0 auto; }
+    .references ul li .quote {
+      display: block;
+      text-align: center;
+      background: #E4E4E4;
+      float: left;
+      padding: 60px;
+      padding-right: 100px;
+      margin-top: 10px;
+      font-style: italic;
+      font-family: "Open Sans", Helvetica, sans-serif;
+      font-size: 1.2em; }
+    .references ul li .person {
+      float: right;
+      border-radius: 50%;
+      border: 6px solid #577EC6;
+      margin: 0;
+      margin-top: -80px;
+      height: 100px;
+      width: 100px; }
+    .references ul li:nth-child(even) .person {
+      float: left; }
+    .references ul li:after {
+      content: "";
+      display: table;
+      clear: both; }
+
+.contact {
+  background: #35599c; }
+  .contact h3 {
+    text-align: center;
+    color: white;
+    font-size: 2em;
+    padding-top: 1em;
+    font-family: "Signika", Helvetica, sans-serif; }
+  .contact .wrapper {
+    display: -webkit-box;
+    display: -moz-box;
+    display: box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center; }
+    .contact .wrapper ul {
+      padding-right: 400px;
+      padding-bottom: 50px;
+      list-style-type: none; }
+      .contact .wrapper ul li {
+        position: relative;
+        margin-top: 2em; }
+        .contact .wrapper ul li .icon {
+          border-radius: 50%;
+          background: white;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          -webkit-transform: translate(-50%, -50%);
+          -moz-transform: translate(-50%, -50%);
+          -ms-transform: translate(-50%, -50%);
+          -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          height: 3.6em;
+          width: 3.6em;
+          text-align: center; }
+          .contact .wrapper ul li .icon:before {
+            font-size: 2em;
+            line-height: 1.8em;
+            color: #2e4e89; }
+        .contact .wrapper ul li span {
+          padding: 0.2em 0.2em 0.1em 1.5em;
+          min-width: 10em;
+          font-size: 1.4em;
+          line-height: 1.4em;
+          z-index: 2;
+          background: white;
+          border: 2px solid #BFBFBF;
+          border-style: inset; }
+          .contact .wrapper ul li span:active {
+            color: black; }
+    .contact .wrapper div {
+      width: 162px; }
+      .contact .wrapper div img {
+        border-radius: 50%;
+        height: 150px;
+        width: 150px;
+        border: 6px solid white; }
+      .contact .wrapper div a {
+        text-decoration: none; }
+      .contact .wrapper div button {
+        display: block;
+        background: #C40B13;
+        color: #FFF;
+        box-shadow: 0px 5px 10px -5px black;
+        outline: none;
+        border: none;
+        font-family: "Signika", Helvetica, sans-serif;
+        font-size: 1.2em;
+        padding: 0.2em 0.5em 0.2em 0.5em; }
+        .contact .wrapper div button:hover {
+          background: #dc0c15; }
+        .contact .wrapper div button:active {
+          background: #ac0a11;
+          box-shadow: 0px 0px 0px -5px black; }
