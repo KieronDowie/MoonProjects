@@ -1,38 +1,17 @@
 <section class="pricing">
-	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing.</h1>
+	
+	<h1> {{ site.pricingblurb }}</h1>
 	<ul>
-		<li>
-			<h3>Title</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quas!</p>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-			</ul>
-			<button>Buy now!</button>
-		</li>
-		<li>
-			<h3>Title</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quas!</p>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-			</ul>
-			<button>Buy now!</button>
-		</li>
-		<li>
-			<h3>Title</h3>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, est! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, quas!</p>
-			<ul>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-				<li>Lorem ipsum dolor sit amet, consectetur.</li>
-			</ul>
-			<button>Buy now!</button>
-		</li>
+		{% for item in site.pricing %}
+			<li>
+				<h3> {{ item.title }} </h3>
+				<p> {{ item.info }} </p>
+				<ul>
+					{% for li in item.list %}
+						<li> {{ li }} </li>
+					{% endfor %}
+				</ul>
+				<button>{{ item.button }}</button>
+		{% endfor %}
 	</ul>
 </section>

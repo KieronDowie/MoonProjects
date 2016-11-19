@@ -353,7 +353,8 @@ footer {
         font-family: "Signika", Helvetica, sans-serif;
         font-size: 2em;
         text-align: center;
-        padding-top: 10px; }
+        padding-top: 1em;
+        padding-bottom: 0.3em; }
       .pricing > ul > li p {
         padding: 10px 20px;
         text-align: left;
@@ -362,7 +363,9 @@ footer {
       .pricing > ul > li ul {
         font-family: "Open Sans", Helvetica, sans-serif;
         font-size: 1.2em;
-        padding-left: 40px; }
+        padding-left: 60px; }
+        .pricing > ul > li ul li {
+          line-height: 1.6em; }
       .pricing > ul > li button {
         display: block;
         background: #C40B13;
@@ -372,7 +375,7 @@ footer {
         border: none;
         font-family: "Signika", Helvetica, sans-serif;
         padding: 10px 20px;
-        margin: 40px auto 20px auto;
+        margin: 20px auto 20px auto;
         width: 80%; }
         .pricing > ul > li button:hover {
           background: #dc0c15; }

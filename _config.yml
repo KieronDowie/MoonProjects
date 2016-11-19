@@ -14,11 +14,55 @@ references: [
   {
     quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in aspernatur, quisquam, totam nulla vitae nemo a consequuntur pariatur id doloremque, officia.",
     person: "http://placehold.it/150x150"
-  },{
+  },
+  {
     quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae, iure distinctio quas consequatur molestias architecto enim dolores, omnis ipsam, odio pariatur.",
     person: "http://placehold.it/150x150"
-  },{
+  },
+  {
     quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minus! Vel quidem delectus labore mollitia eligendi ab odio maiores? Ullam, nisi, blanditiis.",
     person: "http://placehold.it/150x150"
+  }
+]
+pricingblurb: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi.'
+pricing: [
+  {
+    title: 'Lorem ipsum.',
+    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, distinctio asperiores eligendi, quis voluptatem qui fuga neque labore voluptatibus quisquam quae nihil consectetur ipsum, veniam eaque dolore vitae ad. Labore!',
+    list:
+    [
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.'
+    ],
+    button: 'Buy now!',
+    price: 999
   },
+  {
+    title: 'Lorem ipsum.',
+    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, distinctio asperiores eligendi, quis voluptatem qui fuga neque labore voluptatibus quisquam quae nihil consectetur ipsum, veniam eaque dolore vitae ad. Labore!',
+    list:
+    [
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.'
+    ],
+    button: 'Buy now!',
+    price: 999
+  },
+  {
+    title: 'Lorem ipsum.',
+    info: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus, distinctio asperiores eligendi, quis voluptatem qui fuga neque labore voluptatibus quisquam quae nihil consectetur ipsum, veniam eaque dolore vitae ad. Labore!',
+    list:
+    [
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.',
+      'Lorem ipsum dolor sit amet.'
+    ],
+    button: 'Buy now!',
+    price: 999
+  }
 ]
