@@ -16,20 +16,27 @@
 		ul
 		{
 			float:left;
-			margin-left: 20%;
-			margin-right: 10%;
 			list-style-type: none;
+			width:50%;
 			@media (max-width: 760px)
 			{
-				width: 40%;
+				width: 100%;
 				margin:0;
-				margin-left:40%;
 				margin-bottom: 20px;
+				float:none;
 			}
 			li
 			{
 				position:relative;
-				margin-top: 2em;
+				margin: 2em 0 0 0;
+				width:100%;
+				margin-left:40%;
+				text-align:left;
+				@media (max-width: 760px)
+				{
+					margin-left:0;
+					text-align:center !important;
+				}
 				.icon
 				{
 					border-radius: 50%;
@@ -49,8 +56,8 @@
 				}
 				span
 				{
+					position:relative;
 					padding: 0.2em 0.2em 0.1em 1.5em;
-					min-width: 10em;
 					font-size: 1.4em;
 					line-height: 1.4em;
 					z-index: 2;
@@ -61,24 +68,86 @@
 					{
 						color: black;
 					}
+					&:before
+					{
+						border-radius: 50%;
+						background: white;
+						position:absolute;
+						left:0;
+						top: 50%;
+						@include transform(translate(-50%,-50%));
+						text-align:center;
+						font-size: 1.4em;
+						line-height:1.4em;
+						@include size(1.6em);
+						color: darken($pageaccent,20);
+
+						/* use !important to prevent issues with browser extensions that change fonts */
+						font-family: 'icomoon' !important;
+						speak: none;
+						font-style: normal;
+						font-weight: normal;
+						font-variant: normal;
+						text-transform: none;						
+						/* Better Font Rendering =========== */
+						-webkit-font-smoothing: antialiased;
+						-moz-osx-font-smoothing: grayscale;
+					}
+					@media (max-width: 350px)
+					{
+						display: block;
+						overflow:hidden;
+						margin:0;
+						padding: 0;
+						width:100%;
+						&:before
+						{
+							content:'' !important;
+							background: none;
+						}
+					}
+				}
+				#email
+				{
+					&:before
+					{
+						content: "\e945";
+					}
+				}
+				#mobile
+				{
+					&:before
+					{
+						content: "\e943";
+					}
+				}
+				#phone
+				{
+					&:before
+					{
+						content: "\e942";
+					}
 				}
 			}
 		}
 		&>div
 		{
 			float:left;
-			width: 162px;
+			width: 50%;
 			@media (max-width: 760px)
 			{
-				width: 40%;
+				width: 100%;
 				margin:0;
-				margin-left:40%;
+				margin-bottom: 20px;
+				float:none;
 			}
 			img
 			{
 				border-radius: 50%;
 				@include size(150px);
+				margin: 0 auto;
 				border: 6px solid white;
+				display: block;
 			}
 			a
 			{
@@ -89,6 +158,8 @@
 				@include primarybutton;
 				font-size: 1.2em;
 				padding: 0.2em 0.5em 0.2em 0.5em;
+				display: block;
+				margin: 0.3em auto;
 			}
 		}
 		@include clearfix;

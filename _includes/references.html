@@ -3,8 +3,10 @@
 	<ul>
 		{% for ref in site.references %}
 			<li>
-				<div class="quote"> <p> {{ ref.quote }} </p></div>
-				 <img class="person" src="{{ ref.person }}" alt="">
+				<div class="quote"> 
+					<p> {{ ref.quote }} </p>
+					<img class="person" src="{{ ref.person }}" alt="">
+				</div>
 			</li>
 		{% endfor %}
 	</ul>

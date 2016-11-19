@@ -1,15 +1,35 @@
 .pricing
 {
 	background: $pageaccent;
+	box-shadow: 0px 0px 30px 5px black;
+	h1
+	{
+		@include headerfont;
+		text-align:center;
+		padding: 1em 0;
+		color: white;
+		text-shadow: 0 0 10px black;
+	}
 	&>ul
 	{
 		@include display(flex);
-		@include align-items(center);
 		@include justify-content(space-around);
 		list-style-type: none;
 		padding:10px;
+		padding-bottom: 4em;
+		@media (max-width: 580px)
+		{
+			display: block;
+		}	
 		&>li
 		{
+			@media (max-width: 580px)
+			{
+				margin: 20px auto;
+				margin-bottom: 40px;
+				padding-bottom: 20px;
+				width: 80%;
+			}	
 			width: 400px;
 			background: lighten($pageaccent, 25);
 			box-shadow: 0px 0px 30px 0px black;

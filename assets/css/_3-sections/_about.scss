@@ -1,5 +1,6 @@
 .about
 {
+	z-index: -1;
 	position: relative;
 	background: $pagecolor;
 	border-top: 6px solid lighten($pageaccent,15);

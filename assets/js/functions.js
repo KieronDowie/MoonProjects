@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	$('.spanText').focus(highlight);
 	$('a').click(scrollToLink)
-    jQuery(".hero h1").fitText(1, { minFontSize: '100px', maxFontSize: '400px' });
+    jQuery(".hero h1").fitText(1, { minFontSize: '10px', maxFontSize: '400px' });
 });
 
 function scrollToLink(e){

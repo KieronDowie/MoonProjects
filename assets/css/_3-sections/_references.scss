@@ -10,35 +10,39 @@
 	ul
 	{
 		list-style-type: none;
+		width:100%;
 		li
 		{
+			margin: 40px auto 80px auto;
 			width: 90%;
-			margin: 40px auto 0 auto;
 			.quote
 			{
+				position:relative;
 				display: block;
 				text-align: center;
 				background: #E4E4E4;
-				float:left;
 				padding: 60px;
 				padding-right: 100px;
 				margin-top: 10px;
 				font-style: italic;
 				@include paragraphfont;
 				font-size: 1.2em;
-			}
-			.person
-			{	
-				float:right;
-				border-radius: 50%;
-				border: 6px solid $pageaccent;
-				margin: 0;
-				margin-top: -80px;
-				@include size( 100px);
+				.person
+				{	
+					border-radius: 50%;
+					border: 6px solid $pageaccent;
+					margin: 0;
+					@include size( 100px);
+					position:absolute;
+					left: 1em;
+					bottom:0;
+					@include transform(translateY(50%));
+				}
 			}
 			&:nth-child(even) .person
 			{
-				float:left;
+				left: unset;
+				right: 1em;
 			}
 			@include clearfix;
 		}
