@@ -200,6 +200,7 @@ h1, p, footer {
   font-style: normal; }
 .hero {
   background-image: url("https://github.com/KieronDowie/MoonProjects/blob/master/assets/img/herobg.jpg?raw=true");
+  background-color: #71809C;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
