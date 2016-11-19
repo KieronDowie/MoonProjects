@@ -2,7 +2,7 @@ sass:
     sass_dir: assets/css
 
 title: Moon Projects
-icon: http://placehold.it/150x150.png
+icon: https://github.com/KieronDowie/MoonProjects/blob/master/assets/img/icon.png?raw=true
 email: someemail@someprovider.com
 mobile: 012 345 6789
 phone: 012 345 6789
@@ -13,15 +13,15 @@ aboutme: [
 references: [
   {
     quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat in aspernatur, quisquam, totam nulla vitae nemo a consequuntur pariatur id doloremque, officia.",
-    person: "http://placehold.it/150x150"
+    person: "https://github.com/KieronDowie/MoonProjects/blob/master/assets/img/icon.png?raw=true"
   },
   {
     quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam quae, iure distinctio quas consequatur molestias architecto enim dolores, omnis ipsam, odio pariatur.",
-    person: "http://placehold.it/150x150"
+    person: "https://github.com/KieronDowie/MoonProjects/blob/master/assets/img/icon.png?raw=true"
   },
   {
     quote: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, minus! Vel quidem delectus labore mollitia eligendi ab odio maiores? Ullam, nisi, blanditiis.",
-    person: "http://placehold.it/150x150"
+    person: "https://github.com/KieronDowie/MoonProjects/blob/master/assets/img/icon.png?raw=true"
   }
 ]
 pricingblurb: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi.'
